@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "name": "namaste_react",
+  "description": "Learn React",
+  "version": "1.0.0",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddhart142/Namaste_React.git"
+  },
+  "author": "Siddhart Jaiswal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siddhart142/Namaste_React/issues"
+  },
+  "homepage": "https://github.com/siddhart142/Namaste_React#readme"
+}

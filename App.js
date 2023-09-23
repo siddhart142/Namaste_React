@@ -7,20 +7,22 @@
         <h1>I am tag 1</h1>
         <h2>I am tag 2</h2>
     </div>
-</div> */}
+</div> 
+*/}
 
-
+import React from 'react';
+import ReactDOM from 'react-dom';
 const heading = React.createElement("div",{id : "parent"},
     [
         React.createElement("div",{id:"child1"},
         [
-            React.createElement("h1",{},"I am tag 1"),
-            React.createElement("h2",{},"I am tag 2"),
+            React.createElement("h1",{},"I akkkkm h1"),
+            React.createElement("h2",{},"I ammmmm h2"),
         ]),
         React.createElement("div",{id:"child2"},
         [
-            React.createElement("h1",{},"I am tag 1"),
-            React.createElement("h2",{},"I am tag 2"),
+            React.createElement("h1",{},"I am taggggg 1"),
+            React.createElement("h2",{},"I am taghhhhhgg2"),
         ]),
     ]
 );
