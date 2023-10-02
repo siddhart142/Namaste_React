@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { MENU_API } from "../utilis/constants";
 import useFetchApi from "../utilis/useFetchApi";
 import RestaurantCategory from "./RestaurantCategory";
+
 
 
 const Restaurant = () => {
@@ -11,6 +13,7 @@ const Restaurant = () => {
 
     const Api = MENU_API+resId;
     const RestaurantMenu = useFetchApi(Api);
+    const [showIndex,setShowIndex] = useState(null);
 
     if(RestaurantMenu===null)
     {
@@ -37,7 +40,7 @@ const Restaurant = () => {
             <p className="font-bold ">Cost for two : Rs{costForTwo/100}</p>
             <p>
             {
-                categories.map((category) => <RestaurantCategory key={category.card.card.title} data={category?.card?.card} />)
+                categories.map((category,index) => <RestaurantCategory key={category.card.card.title} data={category?.card?.card} showItems={index==showIndex?true:false} setShowIndex={()=>showIndex===index?setShowIndex(null):setShowIndex(index)} /> )
             }
             </p>
         </div>

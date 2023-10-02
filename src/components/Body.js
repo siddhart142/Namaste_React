@@ -1,9 +1,8 @@
-import React from "react";
+// import React from "react";
 import ResCard ,{withPromotedLabel} from "./ResCard";
 import { useState, useEffect } from "react";
 import {Link} from "react-router-dom"
 import useOnlineStatus from "../utilis/useOnlineStatus";
-import Restaurant from "./Restaurant";
 
 // import { MOCK_DATA } from "../utilis/constants"
 
