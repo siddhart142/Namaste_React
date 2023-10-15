@@ -12,7 +12,9 @@ const Restaurant = () => {
     const {resId} = useParams();  
 
     const Api = MENU_API+resId;
+
     const RestaurantMenu = useFetchApi(Api);
+    
     const [showIndex,setShowIndex] = useState(null);
 
     if(RestaurantMenu===null)

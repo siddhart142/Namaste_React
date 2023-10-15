@@ -10,7 +10,9 @@ const Body = () => {
 
     const [listOfRes, setlistOfRes] = useState([]);
     const [filteredRes, setFilteredRes] = useState([]);
+
     const [searchItem,setSearchItem] = useState("");
+
     const onlineStatus = useOnlineStatus();
     // const getData = async ()=>{
     //     try{
@@ -48,10 +50,10 @@ const Body = () => {
         console.log("useState")
     },[]);
 
-    console.log(listOfRes.length)
-    console.log(filteredRes.length)
-    console.log(filteredRes)
-    console.log(listOfRes)
+    // console.log(listOfRes.length)
+    // console.log(filteredRes.length)
+    // console.log(filteredRes)
+    // console.log(listOfRes)
 
     if(onlineStatus===false)
     {
@@ -62,7 +64,7 @@ const Body = () => {
     {
         console.log("not rendered");
         return (
-            <div>hello</div>
+            <div>hello</div> // shimmer
         )
     }
 

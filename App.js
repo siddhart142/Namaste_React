@@ -5,10 +5,12 @@ import Body from "./src/components/Body"
 import About from "./src/components/About"
 import Contact from "./src/components/Contact"
 import Error  from "./src/components/Error"
+import Cart from "./src/components/Cart"
 import Restaurant from "./src/components/Restaurant"
 import { lazy, Suspense } from "react"
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"
-
+import { Provider } from "react-redux"
+import store from "../Namaste_React/src/utilis/appStore"
 const App = () => (
     <div className="app">
         {/* Header
@@ -21,8 +23,10 @@ const App = () => (
         <About />*/}
         {/*if path = "/Contact" 
         <Contact />*/}
-        <Header/>  
-        <Outlet/>  
+        <Provider store={store}>
+            <Header/>  
+            <Outlet/>  
+        </Provider>
         {/* outlet will be replaced by children */}
     </div>
 )
@@ -72,6 +76,10 @@ const appRouter = createBrowserRouter([
             {
                 path : "/Restaurants/:resId",
                 element : <Restaurant />
+            },
+            {
+                path : "/Cart",
+                element: <Cart />
             },
            
         ],

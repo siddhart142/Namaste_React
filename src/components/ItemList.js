@@ -1,6 +1,12 @@
-
+import { useDispatch } from "react-redux"
+import { addItem } from "../utilis/cartSlice";
 const ItemList = ({items})=>{
+
+    const dispatch = useDispatch();
     console.log(items)
+    const handleAddItem = (item) => {
+        dispatch(addItem(item))
+    } 
     return(
         <div >
             {
@@ -12,6 +18,7 @@ const ItemList = ({items})=>{
                     <p className="text-xs ">
                         {item.card.info.description}
                     </p>
+                    <button onClick={() => handleAddItem(item)}>Add +</button>
                 </div>)
             }
         </div>
