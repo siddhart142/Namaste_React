@@ -10,7 +10,7 @@ import Restaurant from "./src/components/Restaurant"
 import { lazy, Suspense } from "react"
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"
 import { Provider } from "react-redux"
-import store from "../Namaste_React/src/utilis/appStore"
+import store from "./src/utilis/appStore"
 const App = () => (
     <div className="app">
         {/* Header
