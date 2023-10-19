@@ -20,7 +20,11 @@ const Restaurant = () => {
     if(RestaurantMenu===null)
     {
         return (
+            <>
+            console.log("hello world")
             <div>Hello</div>
+            </>
+            
         )
     }
 
