@@ -11,6 +11,8 @@ import { lazy, Suspense } from "react"
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"
 import { Provider } from "react-redux"
 import store from "./src/utilis/appStore"
+import Sidebar from "./src/components/Sidebar"
+import Login from "./src/components/Login"
 const App = () => (
     <div className="app">
         {/* Header

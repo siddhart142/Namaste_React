@@ -10,7 +10,7 @@ const Header = () =>{
     // console.log(store.cart.items)
     const onlineStatus = useOnlineStatus();
 return(
-    <div className="flex justify-between bg-blue-100 shadow-2xl">
+    <div className="flex justify-between bg-blue-100 shadow-2xl ">
         <div className="w-28 ">
             <img className="h-full" src={LOGO_URL} alt="logo" />
         </div>
